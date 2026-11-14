@@ -12,7 +12,7 @@ Web Cache Deception is a web security vulnerability in which an attacker tricks 
 
 The vulnerability occurs because the caching system and the actual web application interpret the same URL differently.
 
-To understand how this happens, we first need to understand web caching.
+To understand how this happens, we first need to understand the concept of web caching.
 
 ---
 
