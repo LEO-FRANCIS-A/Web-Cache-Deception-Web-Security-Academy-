@@ -174,11 +174,11 @@ This section contains my hands-on experiments from PortSwigger Web Security Acad
 
 | # | Lab | Difficulty | Status |
 |---|---|---|---|
-| 01 | [Exploiting Path Mapping](Lab%20-%201/) | Apprentice | 🟢 Solved |
-| 02 | [Exploiting Path Delimiters](Lab%20-%202/) | Practitioner | 🟢 Solved |
-| 03 | [Exploiting Origin Server Normalization](Lab%20-%203/) | Practitioner | 🟢 Solved |
-| 04 | [Exploiting Cache Server Normalization](Lab%20-%204/) | Practitioner | 🟢 Solved |
-| 05 | [Exploiting Exact-Match Cache Rules](Lab%20-%205/) | Expert | 🟢 Solved |
+| 01 | [Exploiting Path Mapping](Lab%20-%2001/) | Apprentice | 🟢 Solved |
+| 02 | [Exploiting Path Delimiters](Lab%20-%2002/) | Practitioner | 🟢 Solved |
+| 03 | [Exploiting Origin Server Normalization](Lab%20-%2003/) | Practitioner | 🟢 Solved |
+| 04 | [Exploiting Cache Server Normalization](Lab%20-%2004/) | Practitioner | 🟢 Solved |
+| 05 | [Exploiting Exact-Match Cache Rules](Lab%20-%2005/) | Expert | 🟢 Solved |
 
 <details>
 <summary>🔍 Explore the experiments</summary>
