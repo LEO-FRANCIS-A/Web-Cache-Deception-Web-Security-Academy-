@@ -84,13 +84,13 @@ If the cache stores the response, the sensitive account information may become a
 
 ```mermaid
 flowchart TD
-    A["🎯 Attacker crafts a malicious URL"] --> B["👤 Victim visits the URL"]
-    B --> C["⚡ Cache Server"]
-    C --> D["🖥️ Origin Server"]
-    D --> E["🔐 Returns private account information"]
-    E --> F["📦 Cache stores the response"]
-    F --> G["🎯 Attacker requests the same URL"]
-    G --> H["💥 Cached sensitive information exposed"]
+    A[" Attacker crafts a malicious URL"] --> B[" Victim visits the URL"]
+    B --> C[" Cache Server"]
+    C --> D[" Origin Server"]
+    D --> E[" Returns private account information"]
+    E --> F[" Cache stores the response"]
+    F --> G[" Attacker requests the same URL"]
+    G --> H[" Cached sensitive information exposed"]
 ```
 
 **The important point:** The cache thinks it is storing a harmless static resource, but the actual response contains private information.
@@ -174,11 +174,11 @@ This section contains my hands-on experiments from PortSwigger Web Security Acad
 
 | # | Lab | Difficulty | Status |
 |---|---|---|---|
-| 01 | [Exploiting Path Mapping](Labs/Lab-01-Exploiting-Path-Mapping/) | Apprentice | 🟢 Solved |
-| 02 | [Exploiting Path Delimiters](Labs/Lab-02-Exploiting-Path-Delimiters/) | Practitioner | 🟢 Solved |
-| 03 | [Exploiting Origin Server Normalization](Labs/Lab-03-Exploiting-Origin-Server-Normalization/) | Practitioner | 🟢 Solved |
-| 04 | [Exploiting Cache Server Normalization](Labs/Lab-04-Exploiting-Cache-Server-Normalization/) | Practitioner | 🟢 Solved |
-| 05 | [Exploiting Exact-Match Cache Rules](Labs/Lab-05-Exploiting-Exact-Match-Cache-Rules/) | Expert | 🟢 Solved |
+| 01 | [Exploiting Path Mapping](Lab%20-%201/) | Apprentice | 🟢 Solved |
+| 02 | [Exploiting Path Delimiters](Lab%20-%202/) | Practitioner | 🟢 Solved |
+| 03 | [Exploiting Origin Server Normalization](Lab%20-%203/) | Practitioner | 🟢 Solved |
+| 04 | [Exploiting Cache Server Normalization](Lab%20-%204/) | Practitioner | 🟢 Solved |
+| 05 | [Exploiting Exact-Match Cache Rules](Lab%20-%205/) | Expert | 🟢 Solved |
 
 <details>
 <summary>🔍 Explore the experiments</summary>
