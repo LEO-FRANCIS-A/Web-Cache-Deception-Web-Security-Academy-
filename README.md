@@ -75,8 +75,8 @@ https://example.com/my-account/profile.css
 
 Now something interesting happens:
 
-- The **origin server** interprets the request as `/my-account` and returns private account information.
-- The **cache server** sees `.css` and assumes the request is for a static stylesheet.
+- **Origin Server:** Interprets the request as `/my-account` and returns private account information.
+- **Cache Server:** Sees `.css` and assumes the request is for a static stylesheet.
 
 If the cache stores the response, the sensitive account information may become accessible to another user.
 
@@ -164,9 +164,50 @@ Web Cache Deception also demonstrates how seemingly minor differences in request
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🧪 Practical Labs & Experiments
 
-The following tools are useful for investigating and understanding web caching behavior.
+Theory becomes more meaningful when you can reproduce vulnerabilities yourself.
+
+This section contains my hands-on experiments from PortSwigger Web Security Academy, documenting the vulnerability analysis, exploitation methodology, payloads, observations, and lessons learned.
+
+**Progress: 5 Experiments Completed**
+
+| # | Lab | Difficulty | Status |
+|---|---|---|---|
+| 01 | [Exploiting Path Mapping](Labs/Lab-01-Exploiting-Path-Mapping/) | Apprentice | 🟢 Solved |
+| 02 | [Exploiting Path Delimiters](Labs/Lab-02-Exploiting-Path-Delimiters/) | Practitioner | 🟢 Solved |
+| 03 | [Exploiting Origin Server Normalization](Labs/Lab-03-Exploiting-Origin-Server-Normalization/) | Practitioner | 🟢 Solved |
+| 04 | [Exploiting Cache Server Normalization](Labs/Lab-04-Exploiting-Cache-Server-Normalization/) | Practitioner | 🟢 Solved |
+| 05 | [Exploiting Exact-Match Cache Rules](Labs/Lab-05-Exploiting-Exact-Match-Cache-Rules/) | Expert | 🟢 Solved |
+
+<details>
+<summary>🔍 Explore the experiments</summary>
+
+**Experiment 01 — Path Mapping**
+
+Understanding how differences in URL-to-resource mapping can cause sensitive dynamic responses to be cached.
+
+**Experiment 02 — Path Delimiters**
+
+Investigating how different interpretations of delimiter characters can create cache discrepancies.
+
+**Experiment 03 — Origin Server Normalization**
+
+Exploiting differences in how the origin server decodes and normalizes URL paths.
+
+**Experiment 04 — Cache Server Normalization**
+
+Investigating how cache-side normalization combined with delimiter discrepancies can expose sensitive information.
+
+**Experiment 05 — Exact-Match Cache Rules**
+
+Exploring how exact filename caching rules can be exploited and chained with CSRF to perform an unauthorized account modification.
+
+</details>
+
+---
+
+## 🛠️ Tools & Technologies
 
 | Tool | Purpose |
 |---|---|
@@ -184,8 +225,6 @@ The following tools are useful for investigating and understanding web caching b
 This repository is built around a hands-on learning approach.
 
 Rather than simply collecting payloads, the objective is to understand the reasoning behind each vulnerability.
-
-The learning process focuses on:
 
 1. **Understand** — Learn how web caching works.
 2. **Investigate** — Examine how the cache and origin server process requests.
