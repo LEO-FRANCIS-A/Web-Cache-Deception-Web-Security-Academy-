@@ -1,8 +1,6 @@
-# Exploiting Path Delimiters for Web Cache Deception
+# Lab 02: Exploiting Path Delimiters for Web Cache Deception
 
-**Difficulty:** Practitioner  
-**Vulnerability:** Web Cache Deception (WCD)  
-**Status:** Solved
+![Difficulty](https://img.shields.io/badge/DIFFICULTY-PRACTITIONER-orange?style=for-the-badge) ![Status](https://img.shields.io/badge/STATUS-SOLVED-brightgreen?style=for-the-badge) ![Vulnerability](https://img.shields.io/badge/VULNERABILITY-WEB%20CACHE%20DECEPTION-red?style=for-the-badge)
 
 ## 1. Lab Description
 
