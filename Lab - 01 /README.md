@@ -1,15 +1,12 @@
 # Lab 01: Exploiting Path Mapping for Web Cache Deception
 
-**Difficulty:** Apprentice  
-**Status:** Solved  
-**Platform:** PortSwigger Web Security Academy  
-**Vulnerability:** Web Cache Deception (WCD)
+![Difficulty](https://img.shields.io/badge/DIFFICULTY-APPRENTICE-orange?style=for-the-badge) ![Status](https://img.shields.io/badge/STATUS-SOLVED-brightgreen?style=for-the-badge) ![Vulnerability](https://img.shields.io/badge/VULNERABILITY-WEB%20CACHE%20DECEPTION-red?style=for-the-badge)
 
 ## 1. Lab Objective
 
 The objective of this lab was to exploit a path mapping discrepancy between the origin server and the web cache to retrieve the API key belonging to the user `carlos`.
 
-Credentials provided:
+**Credentials provided:**
 
 - Username: `wiener`
 - Password: `peter`
@@ -95,7 +92,7 @@ The next step was to make the victim, `carlos`, visit a URL that triggered the v
 
 I used the PortSwigger Exploit Server to deliver the following JavaScript:
 
-```javascript
+```html
 <script>
     document.location="https://YOUR-LAB-ID.web-security-academy.net/my-account/wcd.js"
 </script>
